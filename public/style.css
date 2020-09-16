@@ -1,0 +1,335 @@
+* { margin: 0; padding: 0; }
+body { background-color: #2b2b2b;  font-family: 'Roboto', sans-serif; }
+a { text-decoration: none; color: #F0F7F7; }
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-thumb { background: #44BBDD; border-radius: 8px; }
+
+
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    font-weight: 700;
+}
+
+.navbar ul li:hover a{
+    color: #F0F7F7;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a{
+    color: #44BBDD;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    color: #F0F7F7;
+    margin: 200px 10% 0 10%;
+}
+
+.main {
+    margin-right: 56px;
+}
+
+.main h1 {
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+main .svg {
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* QUEM SOU */
+.lucaslessa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    color: #F0F7F7;
+    margin: 100px 10% 0 10%;
+}
+
+.foto {
+    border-radius: 50%;
+    max-width: 300px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.apresentacao {
+    max-width: 400px;
+}
+
+.apresentacao h2 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    border-bottom: solid 4px #44BBDD;
+}
+
+.apresentacao p {
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+/* PORTFOLIO */
+.fundo-azul {
+    background-color: #44BBDD;
+}
+
+.portfolio {
+    position: relative;
+    top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    color: #F0F7F7;
+    margin: 250px 10% 0 10%;
+}
+
+.portfolio h2 {
+    border-bottom: solid 4px #44BBDD;
+    margin-bottom: 32px;
+}
+
+.portfolio .projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.portfolio .projetos .projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio .projetos .projeto img {
+    max-width: 300px;
+    max-height: 200px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio .projetos .projeto a {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    color: #1c2733;
+    font-weight: 700;
+}
+
+/* CONTATO */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 100px 10% 0 10%;
+}
+
+.contato h2 {
+    color: #F0F7F7;
+    border-bottom: solid 4px #44BBDD;
+    margin-bottom: 56px;
+}
+
+.contato .svg {
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .contato-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contato .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 500px;
+    color: #F0F7F7;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 32px 48px;
+    border-radius: 8px;
+}
+
+.contato .form h3 {
+    color: #F0F7F7;
+    border-bottom: solid 4px #44BBDD;
+    margin-bottom: 32px;
+}
+
+.contato .form label {
+    align-self: flex-start;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.contato .form input {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.contato .form button {
+    margin-top: 16px;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 100px 10% 0 10%;
+    padding: 30px 0;
+}
+
+.footer .menu {
+    width: 80%;
+}
+
+.footer .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .menu ul li a {
+    transition: 0.5s;
+}
+
+.footer .menu ul li:hover a {
+    color: #44BBDD;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.footer .social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    margin-top: 56px;
+}
+
+.footer .social ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #F0F7F7;
+    width: 32px;
+    height: 32px;
+}
+
+.footer .social ul li a {
+    transition: 0.5s;
+}
+
+.footer .social ul li:hover a {
+    color: #44BBDD;
+}
+
+.footer small {
+    color: #F0F7F7;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 0.2em;
+}
+
+/* BUTTON */
+.button {
+    padding: 10px 20px;
+    color: #1c2733;
+    background-color: #44BBDD;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: #F0F7F7;
+}
+
+.cta {
+    padding: 16px 24px;
+    font-size: 20px;
+    margin-top: 16px;
+    color: #1c2733;
+    transition: 0.5s;
+}
+
+.cta:hover {
+    color: #F0F7F7;
+}
